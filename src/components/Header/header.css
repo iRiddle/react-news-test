@@ -1,0 +1,11 @@
+.ml-auto {
+  align-items: center;
+}
+
+.nav__link {
+  margin-right: 12px;
+}
+
+a {
+  color: #5a6268 !important;
+}

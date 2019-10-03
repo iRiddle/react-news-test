@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 
 import App from "containers/App";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-notifications/lib/notifications.css";
 import * as serviceWorker from "./serviceWorker";
 import { configureStore } from "./core/configureStore.js";
 
@@ -13,7 +14,9 @@ const store = configureStore({});
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

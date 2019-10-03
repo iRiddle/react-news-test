@@ -1,18 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Layout from "containers/Layout/Layout";
 import News from "containers/News/News";
+import Profile from "containers/Profile/Profile";
+import Login from "containers/Login/Login";
 
 const App = () => {
   return (
     <Layout>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={News} />
-          <Route path="/news" component={News} />
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/" component={News} />
+        <Route path="/news" component={News} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/login" component={Login} />
+      </Switch>
     </Layout>
   );
 };

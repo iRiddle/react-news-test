@@ -20,6 +20,6 @@ export function* getNewsAction() {
   }
 }
 
-export default function* watchFetchMovies() {
+export default function* watchFetchNews() {
   yield takeLatest(GET_NEWS_TRIGGER, getNewsAction);
 }

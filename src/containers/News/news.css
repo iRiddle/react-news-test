@@ -1,0 +1,16 @@
+.news {
+  margin-bottom: 24px;
+}
+
+.news_preloader {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 300px;
+}
+
+.news__count {
+  display: flex;
+  justify-content: flex-end;
+}
